@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    background: #121212; /* preto mais suave */
+}
+
+fieldset {
+    margin-bottom: 15px;
+    max-width: 700px;
+    color: #e0e0e0; /* branco mais suave */
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+    color: #ffffff;
+}
+
+input {
+    margin: 4px 0;
+    color: #000000;
+    background-color: #dddddd; /* leve contraste */
+}
+
+button {
+    cursor: pointer;
+    margin-right: 8px;
+    color: #000000;
+    background-color: #cccccc; /* cinza claro */
+}
+
+table {
+    margin-top: 12px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 728px;
+    color: #e0e0e0;
+}
+
+th,
+td {
+    border: 1px solid #aaaaaa; /* branco menos forte */
+}
+
+th {
+    text-align: left;
+    background: #1e1e1e; /* levemente mais claro que o fundo */
+}
+
+h1 {
+    color: #e0e0e0;
+}
+
+#editBox {
+    display: none;
+    color: #ffffff;
+    margin-top: 12px;
+    padding: 12px;
+    border: 1px solid #aaaaaa;
+    background: #1e1e1e;
+    max-width: 700px;
+}
+
+#editBox header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.acoes button{
+    margin-right: 6px;
+}

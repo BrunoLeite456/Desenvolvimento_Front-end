@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Pets</h1>
+
+    <form id="formCadastro">
+
+
+        <fieldset>
+            <legend>Dados do pet</legend>
+
+            <label for="pet">Nome</label>
+            <input type="text" id="pet" name="pet" autocomplete="off">
+            <br>
+
+            <label for="idade"> Idade</label>
+            <input type="number" id="idade" name="idade" min="o" step="1">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Dados do tutor</legend>
+            <label for="tutor">Tutor</label>
+            <input type="text" id="tutor" name="tutor" autocomplete="off">
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+        <button type="button" id="btnLimparLista">Limpar</button>
+
+    </form>
+<!-- 
+    <section id="editBox" aria-hidden="true">
+        <header>
+            <strong>Alteração</strong>
+            <button type="button" id="btnFecharEdicao" aria-label="Fechar Edicao">x</button>
+
+        </header>
+
+        <form id="fomEdit">
+            <label for="editNome">Nome</label>
+            <input type="text" id="editNome">
+            <br>
+
+
+            <label for="editIdade">Idade</label>
+            <input type="number" id="editIdade" min="0" step="1">
+
+            <label for="editTutor">tutor</label>
+            <input type="text" id="editTutor">
+            <br><br>
+
+            <button type="submit">salvar</button>
+        </form>
+    </section>
+-->
+    <p id="counter"></p>
+
+    <table aria-label="Tabelas de pets cadastrados">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Tutor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="pets"></tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
