@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Personagens de Rick e Morty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Personagens de Rick e Morty</h1>
+    <input type="text" id="busca" placeholder="Buscar personagem...">
+</header>
+
+<!-- Loading animado -->
+<div id="carregando" class="carregando oculto"></div>
+
+<!-- Mensagens de erro e vazio -->
+<p id="mensagemErro" class="erro oculto">Erro ao carregar dados.</p>
+<p id="mensagemVazio" class="vazio oculto">Nenhum personagem encontrado</p>
+
+<!-- Lista de personagens -->
+<div id="lista" class="lista"></div>
+
+<!-- Paginação -->
+<div class="paginacao">
+    <button id="botaoAnterior">Anterior</button>
+    <span id="infoPagina"></span>
+    <button id="botaoProximo">Próxima</button>
+</div>
+
+<!-- Modal de detalhe -->
+<div id="modal" class="modal oculto">
+    <div class="conteudoModal">
+        <span id="fecharModal">&times;</span>
+        <div id="detalhe"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
